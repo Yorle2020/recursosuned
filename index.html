@@ -92,6 +92,50 @@
       font-weight: 400;
       font-size: 0.85rem;
       color: var(--muted);
+    .timeline {
+      position: relative;
+      list-style: none;
+      margin: 0;
+      padding: 0 0 0 1.2rem;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0.34rem;
+      width: 3px;
+      background: linear-gradient(var(--accent), #60a5fa);
+      border-radius: 2px;
+    }
+
+    .week {
+      position: relative;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem;
+      margin: 0 0 1rem 1rem;
+      box-shadow: 0 4px 12px rgba(17, 24, 39, 0.05);
+    }
+
+    .week::before {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--accent);
+      left: -1.47rem;
+      top: 1.05rem;
+      border: 2px solid #fff;
+      box-shadow: 0 0 0 3px var(--accent-soft);
+    }
+
+    .week h2 {
+      margin: 0 0 0.6rem;
+      font-size: 1.1rem;
     }
 
     .tags {
@@ -156,6 +200,20 @@
         <tr><td class="week-label">Semana 12<span class="week-date">4 de agosto de 2026 al 10 de agosto de 2026</span></td><td><span class="tag activity">Actividades</span></td><td><span class="tag resource">Recursos</span></td></tr>
       </tbody>
     </table>
+    <ol class="timeline" aria-label="Línea de tiempo de 12 semanas">
+      <li class="week"><h2>Semana 1</h2><div class="tags"><span class="tag activity">Actividades</span><span class="tag resource">Recursos</span></div></li>
+      <li class="week"><h2>Semana 2</h2><div class="tags"><span class="tag activity">Actividades</span><span class="tag resource">Recursos</span></div></li>
+      <li class="week"><h2>Semana 3</h2><div class="tags"><span class="tag activity">Actividades</span><span class="tag resource">Recursos</span></div></li>
+      <li class="week"><h2>Semana 4</h2><div class="tags"><span class="tag activity">Actividades</span><span class="tag resource">Recursos</span></div></li>
+      <li class="week"><h2>Semana 5</h2><div class="tags"><span class="tag activity">Actividades</span><span class="tag resource">Recursos</span></div></li>
+      <li class="week"><h2>Semana 6</h2><div class="tags"><span class="tag activity">Actividades</span><span class="tag resource">Recursos</span></div></li>
+      <li class="week"><h2>Semana 7</h2><div class="tags"><span class="tag activity">Actividades</span><span class="tag resource">Recursos</span></div></li>
+      <li class="week"><h2>Semana 8</h2><div class="tags"><span class="tag activity">Actividades</span><span class="tag resource">Recursos</span></div></li>
+      <li class="week"><h2>Semana 9</h2><div class="tags"><span class="tag activity">Actividades</span><span class="tag resource">Recursos</span></div></li>
+      <li class="week"><h2>Semana 10</h2><div class="tags"><span class="tag activity">Actividades</span><span class="tag resource">Recursos</span></div></li>
+      <li class="week"><h2>Semana 11</h2><div class="tags"><span class="tag activity">Actividades</span><span class="tag resource">Recursos</span></div></li>
+      <li class="week"><h2>Semana 12</h2><div class="tags"><span class="tag activity">Actividades</span><span class="tag resource">Recursos</span></div></li>
+    </ol>
   </main>
 </body>
 </html>
