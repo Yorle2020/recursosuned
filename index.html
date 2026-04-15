@@ -51,6 +51,47 @@
       color: var(--muted);
     }
 
+    .timeline-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(17, 24, 39, 0.05);
+      overflow: hidden;
+    }
+
+    .timeline-table th,
+    .timeline-table td {
+      border: 1px solid var(--border);
+      padding: 0.8rem;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    .timeline-table thead th {
+      background: var(--accent-soft);
+      color: #1e3a8a;
+      font-size: 0.95rem;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .timeline-table tbody tr:nth-child(even) {
+      background: #f9fafb;
+    }
+
+    .week-label {
+      font-weight: 700;
+      color: #111827;
+    }
+
+    .week-date {
+      display: block;
+      margin-top: 0.2rem;
+      font-weight: 400;
+      font-size: 0.85rem;
+      color: var(--muted);
     .timeline {
       position: relative;
       list-style: none;
@@ -136,6 +177,29 @@
       </p>
     </section>
 
+    <table class="timeline-table" aria-label="Tabla de 12 semanas del curso">
+      <thead>
+        <tr>
+          <th>Semana</th>
+          <th>Actividades</th>
+          <th>Recursos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="week-label">Semana 1<span class="week-date">19 de mayo de 2026 al 25 de mayo de 2026</span></td><td><span class="tag activity">Actividades</span></td><td><span class="tag resource">Recursos</span></td></tr>
+        <tr><td class="week-label">Semana 2<span class="week-date">26 de mayo de 2026 al 1 de junio de 2026</span></td><td><span class="tag activity">Actividades</span></td><td><span class="tag resource">Recursos</span></td></tr>
+        <tr><td class="week-label">Semana 3<span class="week-date">2 de junio de 2026 al 8 de junio de 2026</span></td><td><span class="tag activity">Actividades</span></td><td><span class="tag resource">Recursos</span></td></tr>
+        <tr><td class="week-label">Semana 4<span class="week-date">9 de junio de 2026 al 15 de junio de 2026</span></td><td><span class="tag activity">Actividades</span></td><td><span class="tag resource">Recursos</span></td></tr>
+        <tr><td class="week-label">Semana 5<span class="week-date">16 de junio de 2026 al 22 de junio de 2026</span></td><td><span class="tag activity">Actividades</span></td><td><span class="tag resource">Recursos</span></td></tr>
+        <tr><td class="week-label">Semana 6<span class="week-date">23 de junio de 2026 al 29 de junio de 2026</span></td><td><span class="tag activity">Actividades</span></td><td><span class="tag resource">Recursos</span></td></tr>
+        <tr><td class="week-label">Semana 7<span class="week-date">30 de junio de 2026 al 6 de julio de 2026</span></td><td><span class="tag activity">Actividades</span></td><td><span class="tag resource">Recursos</span></td></tr>
+        <tr><td class="week-label">Semana 8<span class="week-date">7 de julio de 2026 al 13 de julio de 2026</span></td><td><span class="tag activity">Actividades</span></td><td><span class="tag resource">Recursos</span></td></tr>
+        <tr><td class="week-label">Semana 9<span class="week-date">14 de julio de 2026 al 20 de julio de 2026</span></td><td><span class="tag activity">Actividades</span></td><td><span class="tag resource">Recursos</span></td></tr>
+        <tr><td class="week-label">Semana 10<span class="week-date">21 de julio de 2026 al 27 de julio de 2026</span></td><td><span class="tag activity">Actividades</span></td><td><span class="tag resource">Recursos</span></td></tr>
+        <tr><td class="week-label">Semana 11<span class="week-date">28 de julio de 2026 al 3 de agosto de 2026</span></td><td><span class="tag activity">Actividades</span></td><td><span class="tag resource">Recursos</span></td></tr>
+        <tr><td class="week-label">Semana 12<span class="week-date">4 de agosto de 2026 al 10 de agosto de 2026</span></td><td><span class="tag activity">Actividades</span></td><td><span class="tag resource">Recursos</span></td></tr>
+      </tbody>
+    </table>
     <ol class="timeline" aria-label="Línea de tiempo de 12 semanas">
       <li class="week"><h2>Semana 1</h2><div class="tags"><span class="tag activity">Actividades</span><span class="tag resource">Recursos</span></div></li>
       <li class="week"><h2>Semana 2</h2><div class="tags"><span class="tag activity">Actividades</span><span class="tag resource">Recursos</span></div></li>
